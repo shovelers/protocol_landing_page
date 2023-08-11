@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/layout.astro';
+import { Icon } from "astro-icon";
 ---
 
 <Layout title="Decentralised Contact Network">
@@ -8,11 +9,13 @@ import Layout from '../layouts/layout.astro';
       <p class="text-5xl font-bold tracking-tighter">Decentralised Contact Network</p>
       <p class="mt-8 w-4/5 md:w-1/2 text-2xl">Protocol for creation, storage, and retrieval of contextual relationships & social graphs.</p>
       <p class="mt-6 w-4/5 md:w-1/2">Decentralised. User-Controlled. Permissionless</p>
-      <form class="flex flex-row gap-1 md:gap-4 justify-between items-center mt-8" action="https://app.convertkit.com/forms/5439142/subscriptions" method="post" data-sv-form="5439142" data-uid="d33c7e8dbd">
-        <label>Sign up to get updates</label></br>
-        <input class="w-2/3 text-black bg-slate-100 ring-2 ring-slate-500 focus:ring-2 focus:outline-none focus:ring-slate-800 font-medium rounded-lg text-sm py-3.5 text-center md:mr-0" type="email" value="" name="email_address" placeholder="Email Address" id="email" required>
-        <button type="submit" class="bg-black text-white font-medium rounded-lg text-sm px-2.5 md:px-5 py-2 md:py-2.5 text-center md:mr-0">Submit</button>
-      </form>
+      <div class="flex flex-row items-center space-x-8 mt-8">
+        <div>To stay up to date</div>
+        <a href="https://discord.gg/uKrWBB29" target="_blank" class="flex flex-row items-center px-2.5 py-2 rounded-lg bg-black text-white">
+          <Icon class="text-white w-8 h-8 mr-2" name="ic:baseline-discord"/>
+          Join
+        </a>
+      <div>
     </div>
   </main>
 </Layout>
